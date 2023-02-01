@@ -26,8 +26,8 @@
         const now = new Date().getTime().toLocaleString("en-US", {timeZone: "America/Sao_Paulo"}),
           distance = countDown - now;
         atualReal = new Date();
-        inicioReal = new Date(2022, 12, 10, 00);
-        inicioRp = new Date(-58, 00, 01, 00);
+        inicioReal = new Date(2023, 02, 02, 00);
+        inicioRp = new Date(-1200, 00, 01, 00);
         tempo = atualReal - inicioReal;
         tempoRa = tempo * 105;
         var ms = inicioRp.getTime() + tempoRa;
@@ -56,27 +56,5 @@
           document.getElementById("minutes").innerText = ano;
 
         //do something later when date is reached
-        if (dia == 1 && mes == 01) {
-          document.getElementById("headline").innerText = "Feliz ano novo!";
-        }
-        if (dia == 1 && mes == 5) {
-          document.getElementById("headline").innerText = "Feliz Dia do Trabalhador!";
-        }
-        if (dia == 7 && mes == 9) {
-          document.getElementById("headline").innerText = "Feliz Dia da Independência!";
-        }
-        if (dia == 12 && mes == 10) {
-          document.getElementById("headline").innerText = "Feliz Dia de Nossa Senhora Aparecida!"
-        }
-        if (dia == 2 && mes == 11) {
-          document.getElementById("headline").innerText = "Feliz Dia de Finados!";
-        }
-        if (dia == 15 && mes == 1) {
-          document.getElementById("headline").innerText = "Feliz Dia da Proclamação da República!";
-        }
-        if (dia == 25 && mes == 12) {
-          document.getElementById("headline").innerText = "Feliz Natal!";
-        }
-        //seconds
       }, 0)
   }());
