@@ -26,8 +26,8 @@
         const now = new Date().getTime().toLocaleString("en-US", {timeZone: "America/Sao_Paulo"}),
           distance = countDown - now;
         atualReal = new Date();
-        inicioReal = new Date(2023, 02, 02, 00);
-        inicioRp = new Date(-1200, 00, 01, 00);
+        inicioReal = new Date(2023, 02, 20, 00);
+        inicioRp = new Date(224, 00, 01, 00);
         tempo = atualReal - inicioReal;
         tempoRa = tempo * 105;
         var ms = inicioRp.getTime() + tempoRa;
